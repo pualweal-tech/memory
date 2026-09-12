@@ -422,7 +422,7 @@
 
 .editor-bar {
   position: sticky;
-  bottom: calc(var(--nav-h) + var(--safe-bottom) + 8px);
+  bottom: 8px;
   background: var(--color-surface-soft);
   border-radius: 16px;
   display: flex;
