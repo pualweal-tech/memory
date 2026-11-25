@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#F7F5F2" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <title>MEMORY</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#faf9f5"><title>MEMOIR · 数字手账</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="../shared/base.css"><link rel="stylesheet" href="style.css"></head><body><a href="#main" class="skip">跳到正文</a><header class="top"><div class="wrap toolbar"><a class="brand" href="../index.html" aria-label="MEMOIR 启动页"><span class="bookmark" aria-hidden="true">m</span>MEMOIR</a><nav aria-label="主导航"><a href="#preview">手账体验</a><a href="#templates">模板馆</a></nav><a class="btn primary" href="../mobile_app/index.html">打开手账</a></div></header>
+<main id="main"><section class="wrap hero"><div class="hero-text"><p class="eyebrow"><i></i> A personal journal</p><h1>给日常，<br><em>留一页。</em></h1><p class="lead">早餐的温度，走过的街角，还有今天完成的一件小事。把它们收进一本属于你的数字手账。</p><div class="actions"><a class="btn primary" href="../mobile_app/index.html">开始写手账</a><a class="btn" href="#templates">挑一本模板</a></div></div>
+<div class="desk" aria-label="互动手账样页"><div class="book"><div class="book-top"><span>MEMOIR / DAILY PAGES</span><span>手账样页</span></div><div class="notepage"><div><p class="journal-date">SATURDAY, MAY 16</p><h2>散步，在蓝调时刻</h2><p class="sample-copy">等到街灯亮起来，才舍得把今天翻篇。</p></div><figure class="polaroid"><img src="assets/image/night.jpg" alt="暮色里亮起街灯的街道"><figcaption>傍晚散步 · 19:20</figcaption></figure><div class="sample-foot"><button id="sample-task" aria-pressed="false">□ &nbsp; 散步十分钟</button><button id="sample-mood" title="切换样页心情" aria-label="切换样页心情">☕ 充实</button></div></div></div></div></section>
+<section id="preview" class="workshop"><div class="wrap"><div class="section-title"><div><p class="eyebrow">Writing desk</p><h2>试着写一页</h2></div><p>挑一枚贴纸，记下此刻，再带进自己的手账。</p></div><div class="try-grid"><div class="controls"><label class="field">这一页的名字<input id="try-title" maxlength="100" value="傍晚的散步"></label><label class="field">写下此刻<textarea id="try-text" maxlength="2000">沿着熟悉的街走了一段，天色刚好。</textarea></label><fieldset><legend>页角贴纸</legend><div id="stickers" class="chips"></div></fieldset></div><article class="livepage"><span id="live-sticker" aria-hidden="true"></span><p class="eyebrow">Journal entry</p><h3 id="live-title"></h3><p id="live-text"></p><a id="take-draft" class="btn" href="../mobile_app/index.html">在手账中继续写</a></article></div></div></section>
+<section id="templates" class="wrap library"><div class="section-title"><div><p class="eyebrow">Template library</p><h2>从一张模板开始</h2></div><div id="filters" class="chips" aria-label="模板分类"></div></div><div id="gallery" class="gallery"></div></section>
+<section class="wrap simulator"><div><p class="eyebrow">Pocket journal</p><h2>随身的那一本</h2><p class="quiet">在手机视图里翻看日记，安排今日待办，或给一项习惯打卡。</p></div><button class="btn primary" id="simulate">打开手机预览</button></section></main>
+<footer class="wrap footer"><a class="brand" href="../index.html"><span class="bookmark" aria-hidden="true">m</span>MEMOIR</a><a href="../docs/USER_GUIDE.md">使用指南</a></footer>
+<dialog id="sim-dialog" aria-labelledby="sim-title"><header><h2 id="sim-title">手机预览</h2><button class="close" aria-label="关闭预览">×</button></header><iframe title="MEMOIR 手机手账预览"></iframe></dialog>
+<script src="../shared/catalog.js"></script><script src="app.js"></script></body></html>
